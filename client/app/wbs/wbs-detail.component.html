@@ -1,0 +1,12 @@
+<div class="c-container c-wbs-det" *ngIf="wbs">
+    <h3>{{cTitle}}</h3>
+    <div>ID <input [(ngModel)]="wbs.id" disabled></div>
+    <div>Code <input [(ngModel)]="wbs.code"></div>
+    <div>Description <input [(ngModel)]="wbs.desc"></div>
+    <div>Start <input [(ngModel)]="wbs.start"></div>
+    <div>Qty <input [(ngModel)]="wbs.qty"></div>
+    <div>UoM <input [(ngModel)]="wbs.uom"></div>
+    <div *ngIf="this.mode == 1 || this.mode == 2">
+        <button (click)="saveWbs">Save</button>
+    </div>
+</div>

@@ -1,0 +1,303 @@
+/* Component Styles */
+
+.top-header {
+    background: #8080f0;
+    color: #f0f0f0;
+    height: 40px;
+    width: 100%;
+}
+
+.top-app-title {
+    vertical-align: middle;
+    margin: 2px 5px;
+    font-weight: bold;
+    font-size: 20pt;
+    display: inline-block;
+    height: 100%;
+}
+
+.top-user-area {
+    vertical-align: middle;
+    margin-top: -1px;
+    float: right;
+    width: 200px;
+    border: 1px solid;
+    height: 100%;
+}
+
+.page-footer {
+    position: fixed;
+    bottom: 0;
+    background: #8080f0;
+    color: #f0f0f0;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* app-tiles */
+
+.app-tile {
+    border: 3px solid #8080f0;
+    border-radius: 5px;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    margin: 3px;
+    padding: 3px;
+    text-align: center;
+    vertical-align: bottom;
+    color: #8080f0;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.c-container {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 2px 5px 2px 5px;
+    color: #404040;
+    background-color: #f0f0ff;
+    margin: 5px;
+    font-size: 0.9em;
+    vertical-align: top;
+}
+
+.c-container h3 {
+    font-weight: bold;
+    /*TODO: add positioning to display as container label*/
+}
+
+.c-wbs {
+    width: 500px;
+    height: 500px;
+    float: left;
+    overflow: hidden;
+}
+
+.c-wbs li {
+    margin-top: 5px;
+    /*list-style-type: hiragana;*/
+}
+
+.c-wbs-det {
+    width: 300px;
+    height: 500px;
+    display: inline-block;
+}
+
+.c-wbs-det div {
+    margin: 2px 5px 2px 5px;
+    min-width: 100px;
+}
+
+.tree-button {
+    float: right;
+}
+
+.tree-button button {
+    font-size: 8px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* #docregion , quickstart */
+
+
+/* Master Styles */
+
+html {
+    vertical-align: top;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    /*margin-top: 0px;
+    margin-left: 10px;*/
+    /*display: inline-block;*/
+    vertical-align: top;
+}
+
+h1 {
+    color: #369;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+}
+
+h2,
+h3 {
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+body {
+    /*margin: 2em;*/
+    margin: 0px;
+}
+
+
+/* #enddocregion quickstart */
+
+body,
+input[text],
+button {
+    color: #555;
+    font-family: Cambria, Georgia;
+}
+
+a {
+    cursor: pointer;
+    cursor: hand;
+}
+
+button {
+    font-family: Arial;
+    font-weight: bold;
+    background-color: #eee;
+    border: 1px #555 solid;
+    padding: 1px 2px;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+}
+
+button:hover {
+    background-color: #cfd8dc;
+}
+
+button:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
+}
+
+
+/* Navigation link styles */
+
+nav a {
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 4px;
+}
+
+nav a:visited,
+a:link {
+    color: #607D8B;
+}
+
+nav a:hover {
+    color: #039be5;
+    background-color: #CFD8DC;
+}
+
+nav a.active {
+    color: #039be5;
+}
+
+
+/* items class */
+
+.items {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 24em;
+}
+
+.items li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+}
+
+.items li:hover {
+    color: #607D8B;
+    background-color: #DDD;
+    left: .1em;
+}
+
+.items li.selected:hover {
+    background-color: #BBD8DC;
+    color: white;
+}
+
+.items .text {
+    position: relative;
+    top: -3px;
+}
+
+.items {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 24em;
+}
+
+.items li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+}
+
+.items li:hover {
+    color: #607D8B;
+    background-color: #DDD;
+    left: .1em;
+}
+
+.items li.selected {
+    background-color: #CFD8DC;
+    color: white;
+}
+
+.items li.selected:hover {
+    background-color: #BBD8DC;
+}
+
+.items .text {
+    position: relative;
+    top: -3px;
+}
+
+.items .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: #607D8B;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+}
+
+
+/* everywhere else */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}

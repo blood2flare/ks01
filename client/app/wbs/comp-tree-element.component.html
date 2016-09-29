@@ -1,0 +1,10 @@
+<ul>
+    <li *ngFor="let m of me">
+        <div class="tree-button">
+            <span><button (click)="createCompAfter(w)"> + </button></span>
+        </div>
+        <span style="display: block; min-width: 50px; cursor: pointer" (click)="detailMat(m)">
+            <b>{{m.code}}</b> {{m.descr}}
+        </span>
+    </li>
+</ul>

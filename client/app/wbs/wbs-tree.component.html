@@ -1,0 +1,14 @@
+<ul>
+    <li *ngFor="let w of we">
+        <div class="tree-button">
+            <span><button (click)="createWbsBefore(w)"> ^ </button></span>
+            <span><button (click)="createWbsChild(w)"> > </button></span>
+            <span><button (click)="createComponentChild(w)"> C </button></span>
+        </div>
+        <span style="display: inline-block; overflow: hidden; width: 250px" (click)="detailWbs(w)">
+            <b>{{w.code}}</b> {{w.desc}}
+        </span>
+        <c-wbs-tree-element [(we)]="w.sub"></c-wbs-tree-element>
+        <c-comp-tree-element [(me)]="w.material"></c-comp-tree-element>
+    </li>
+</ul>

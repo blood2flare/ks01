@@ -1,0 +1,25 @@
+<div class="c-project-display">
+    <h3>Project</h3>
+    <table>
+        <tr>
+            <td>
+                <ul>
+                    <li *ngFor="let p of projs">
+                        <span class="projectID">{{p.id}}</span>
+                        <span class="projectCode">{{p.code}}</span>
+                        <span class="projectDesription">{{p.desc}}</span>
+                        <span class="projectStart">{{p.start}}</span>
+                        <span class="projectPM">{{p.pm}}</span>
+                        <div>
+                            <!--<button (click)="showWbs($event,p.id)">WBS -></button>-->
+                            <c-wbs [project]="p"></c-wbs>
+                        </div>
+                    </li>
+                </ul>
+            </td>
+            <td>
+                <c-wbs-detail></c-wbs-detail>
+            </td>
+        </tr>
+    </table>
+</div>

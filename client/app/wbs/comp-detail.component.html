@@ -1,0 +1,14 @@
+<div class="c-container c-wbs-det" *ngIf="mat">
+    <h3>{{cTitle}}</h3>
+    <div>ID <input [(ngModel)]="mat.id" disabled></div>
+    <div>Code <input [(ngModel)]="mat.code"></div>
+    <div>Description <input [(ngModel)]="mat.descr" disabled></div>
+    <div>Price <input [(ngModel)]="mat.price" disabled></div>
+    <div>Per <input [(ngModel)]="mat.per" disabled></div>
+    <div>Coef <input [(ngModel)]="mat.coef"></div>
+    <div>Qty <input [(ngModel)]="mat.qty" disabled></div>
+    <div>UoM <input [(ngModel)]="mat.uom" disabled></div>
+    <div *ngIf="this.mode == 1 || this.mode == 2">
+        <button (click)="saveMat">Save</button>
+    </div>
+</div>

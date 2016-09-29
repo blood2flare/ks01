@@ -1,0 +1,24 @@
+.modal {
+    background-color: #d0d0ff;
+}
+
+.modal .title {
+    font-weight: bold;
+}
+
+#lean_overlay {
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    display: none;
+}
+
+.login-container {
+    background-color: #e0e0e0;
+    border: 1pt;
+    padding: 5pt;
+}
